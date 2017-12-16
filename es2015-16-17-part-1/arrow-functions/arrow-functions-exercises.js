@@ -39,7 +39,7 @@ let mapFilterAndReduce = (arr) => arr.map(val => val.firstName).filter(val => va
     }, {})
 
 // 4
-let createStudentObj = (firstName, lastName) => ({firstName:firstName, lastName,lastName})
+let createStudentObj = (firstName, lastName) => ({firstName:firstName, lastName:lastName})
 
 // var instructor = {
 //   firstName: "Colt",
@@ -55,7 +55,7 @@ var instructor = {
   firstName: "Colt",
   sayHi: function(){
     setTimeout(() =>{
-      console.log('Hello ' + this.firstName)
+      console.log(`Hello ${this.firstName}`)
     }, 1000)
   }
 }
